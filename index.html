@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel Nshimbi | Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="hero" id="top">
+    <h1>Emmanuel Nshimbi</h1>
+    <p class="programme">Second-year Computer Science student, Mulungushi University</p>
+    <p class="intro">Welcome to my portfolio. I am learning to build useful websites and apps, and this page shows my work, my photos and my plans.</p>
+    <a class="button" href="#projects">View My Projects</a>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <div class="nav-bar">
+      <button type="button" id="menu-toggle" class="nav-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <button type="button" id="theme-toggle" class="nav-button" aria-pressed="false">Dark mode</button>
+    </div>
+    <ul id="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#plan">Learning Plan</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">Learn web development on MDN</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>My name is Emmanuel Nshimbi. I am a second-year Computer Science student at Mulungushi University in Zambia, and I live in Solwezi. I am studying web technologies because I want to build useful websites and apps. I have skills in Python and Java, and I am also interested in networking engineering. I enjoy learning new tools step by step and practising them until I understand. My goal is to graduate in 2028 as a confident developer who can build full projects.</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Watching football</li>
+        <li>Reading</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <ol>
+        <li>Practise HTML and CSS every week.</li>
+        <li>Learn JavaScript basics.</li>
+        <li>Build and publish a small project on GitHub.</li>
+      </ol>
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr><th>Day</th><th>Topic</th><th>Practice task</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>HTML structure</td><td>Build a new page</td></tr>
+            <tr><td>Wednesday</td><td>CSS layout</td><td>Style a photo gallery</td></tr>
+            <tr><td>Saturday</td><td>JavaScript basics</td><td>Make a button that changes text</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>My Projects and Skills</h2>
+      <p>Here are three things I have learned. Press a button to show or hide the details.</p>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Skills: HTML5, CSS, JavaScript.</p>
+          <button type="button" class="toggle-details" aria-expanded="false" aria-controls="details-1">Show details</button>
+          <div id="details-1" class="details" hidden>
+            <p>I built this website step by step in three activities. I learned page structure, styling, photos, video, audio, forms and JavaScript.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Python and Java Programming</h3>
+          <p>Skills: Python, Java.</p>
+          <button type="button" class="toggle-details" aria-expanded="false" aria-controls="details-2">Show details</button>
+          <div id="details-2" class="details" hidden>
+            <p>In my Computer Science course I practise writing programs in Python and Java. I use them to solve problems and to learn how programs are built.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Interactive Web Pages</h3>
+          <p>Skills: JavaScript, DOM.</p>
+          <button type="button" class="toggle-details" aria-expanded="false" aria-controls="details-3">Show details</button>
+          <div id="details-3" class="details" hidden>
+            <p>I added a form checker, a dark mode button, a phone menu and show or hide buttons. Each one reacts when a visitor clicks or types.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Photo Gallery</h3>
+      <div class="gallery">
+        <figure>
+          <img src="images/photo1.jpg" alt="A student in a white lab coat looking through a microscope in a laboratory">
+          <figcaption>Me working with a microscope in the laboratory</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="A student in a striped shirt and light yellow trousers standing outdoors on a paved area with trees behind">
+          <figcaption>Me standing outdoors in the sunshine</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="A student standing on a grass lawn in front of a white building under a clear blue sky">
+          <figcaption>Me on the lawn in front of a white building</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+      <h3>Video Introduction</h3>
+      <video controls src="videos/intro.mp4"></video>
+      <p>In this short video I introduce myself as a student.</p>
+      <p><strong>Summary:</strong> I say that I am a second-year Computer Science student at Mulungushi University, and that I have skills in Python and Java.</p>
+
+      <h3>Audio Clip</h3>
+      <audio controls src="videos/voice.mp3"></audio>
+      <p>In this clip I talk about my hobbies and my interest in becoming a networking engineer.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="form-note"><strong>Browser demonstration only — no message is sent.</strong></p>
+      <form id="contact-form" action="#" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>General</option>
+            <option>Project</option>
+            <option>Feedback</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+
+        <button type="submit" class="button">Check my message</button>
+      </form>
+
+      <div id="form-result" class="preview" aria-live="polite" hidden>
+        <h3>Form checked</h3>
+        <p>Your details were validated in this browser. No message was sent.</p>
+        <ul>
+          <li>Name: <span id="result-name"></span></li>
+          <li>Email: <span id="result-email"></span></li>
+          <li>Topic: <span id="result-topic"></span></li>
+          <li>Message: <span id="result-message"></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Emmanuel Nshimbi. ICT251 Web Technologies.</p>
+    <p><a href="https://github.com/YOUR-USERNAME/myweb" target="_blank" rel="noopener">View Source on GitHub</a></p>
+  </footer>
+</body>
+</html>
