@@ -1,0 +1,343 @@
+/* ===== Colours: light theme (default) ===== */
+:root {
+  --bg: #f4f7fa;
+  --card: #ffffff;
+  --muted-bg: #eaf1f7;
+  --text: #1b2a38;
+  --heading: #1f4e79;
+  --link: #0b5394;
+  --border: #44556a;
+  --header-bg: #1f4e79;
+  --nav-bg: #163a5c;
+  --btn-bg: #1f4e79;
+  --accent: #ffc107;
+  --error: #b00020;
+}
+
+/* ===== Colours: dark theme (added by JavaScript) ===== */
+body.dark {
+  --bg: #0f1720;
+  --card: #1a2531;
+  --muted-bg: #223142;
+  --text: #e9eff5;
+  --heading: #8ec1f0;
+  --link: #8ec1f0;
+  --border: #8da2b8;
+  --header-bg: #0b2540;
+  --nav-bg: #091c30;
+  --btn-bg: #2f6fa8;
+  --accent: #ffd54f;
+  --error: #ff8a80;
+}
+
+/* ===== Element selectors ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+h2 {
+  color: var(--heading);
+  border-bottom: 2px solid var(--heading);
+  padding-bottom: 0.3rem;
+}
+
+h3 { color: var(--heading); }
+
+a { color: var(--link); }
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio { width: 100%; }
+
+[hidden] { display: none !important; }
+
+/* ===== Visible keyboard focus ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ff9800;
+  outline-offset: 2px;
+}
+
+/* ===== Introduction area ===== */
+.hero {
+  background-color: var(--header-bg);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+}
+
+.programme {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* ===== Buttons ===== */
+.button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #000000;
+  padding: 0.7rem 1.4rem;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: var(--nav-bg);
+  padding: 0.5rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #000000;
+}
+
+#menu-toggle { display: none; }
+
+#nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#nav-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
+
+#nav-links a:hover,
+#nav-links a:focus {
+  background-color: var(--accent);
+  color: #000000;
+}
+
+/* ===== Main sections (box model: padding, margin, border) ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.content-section {
+  background-color: var(--card);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+
+#hobbies { background-color: var(--muted-bg); }
+
+/* ===== Table ===== */
+.table-wrap { overflow-x: auto; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--btn-bg);
+  color: #ffffff;
+}
+
+/* ===== Projects ===== */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: var(--muted-bg);
+}
+
+.project-card h3 { margin-top: 0; }
+
+.toggle-details {
+  background-color: var(--btn-bg);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.toggle-details:hover,
+.toggle-details:focus {
+  background-color: var(--accent);
+  color: #000000;
+}
+
+.details {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border);
+}
+
+/* ===== Photo gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+figure { margin: 0; }
+
+figure img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+/* ===== Form ===== */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: var(--card);
+  color: var(--text);
+}
+
+input.invalid, textarea.invalid {
+  border: 2px solid var(--error);
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.9rem;
+  min-height: 1.1em;
+  margin-top: 0.25rem;
+}
+
+.preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #2e7d32;
+  border-radius: 6px;
+  background-color: var(--muted-bg);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--nav-bg);
+  color: #ffffff;
+}
+
+footer a { color: var(--accent); }
+
+/* ===== Phones: media query ===== */
+@media (max-width: 700px) {
+  .hero h1 { font-size: 1.7rem; }
+
+  #menu-toggle { display: inline-block; }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  #nav-links.open { display: flex; }
+
+  #nav-links a {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+}
